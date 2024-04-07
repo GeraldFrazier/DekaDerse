@@ -1,3 +1,4 @@
+// pages/youtube.tsx
 "use client"
 import { useEffect, useState } from 'react';
 
@@ -25,16 +26,12 @@ export default function Youtube() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const PLAYLIST_ID = 'PLjXG2-PnFnQbSEbLrDTSwPw5MzA2NS8ud';
-
       try {
-        const res = await fetch(`https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=50&playlistId=${PLAYLIST_ID}&key=${process.env.NEXT_PUBLIC_YOUTUBE_API_KEY}`);
-        
+        const res = await fetch('/api/youtube');
         if (!res.ok) {
           throw new Error('Failed to fetch data');
         }
-
-        const fetchedData = await res.json(); // Extract JSON data from response
+        const fetchedData = await res.json();
         setData(fetchedData.items);
       } catch (error) {
         console.error('Error fetching data:', error);
