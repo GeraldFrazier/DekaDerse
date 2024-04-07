@@ -1,11 +1,9 @@
 import Link from "next/link";
 
-interface SoundCloudProps {
-    playlistUrl: string;
-}
+
 
 // Remove the '=' and 'function' keyword
-const SoundCloud = ({ playlistUrl }: SoundCloudProps) => {
+const SoundCloud = () => {
     return (
         <div className="mx-auto max-w-2xl">
             <iframe
