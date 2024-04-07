@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import Header from "@/components/Header";
-import VideoCarousel from "@/components/Youtube";
+import VideoCarousel from "@/app/youtube/Youtube";
 import { ReactNode } from "react";
 
 
@@ -28,6 +28,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <Header />
         {children}
         </ThemeProvider>
         
