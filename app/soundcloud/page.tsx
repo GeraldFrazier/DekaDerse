@@ -14,7 +14,7 @@ interface SoundCloudPlaylistProps {
     ></iframe>
     <div className="">
         {/* Adding a Link component */}
-        <Link href="/youtube">Go to YouTube</Link>
+        <Link href="/Youtube">Go to YouTube</Link>
 
       </div>
 </div>
