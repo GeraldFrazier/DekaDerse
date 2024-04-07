@@ -1,3 +1,5 @@
+"use client"
+
 import Link from "next/link";
 
 
@@ -14,7 +16,7 @@ const SoundCloud = () => {
             ></iframe>
             <div className="">
                 {/* Adding a Link component */}
-                <Link href="/Youtube">Go to YouTube</Link>
+                <Link href="/youtube">Go to YouTube</Link>
             </div>
         </div>
     );

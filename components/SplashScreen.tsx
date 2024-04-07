@@ -12,7 +12,7 @@ const SplashScreen = () => {
       router.push('/soundcloud');
     };
 
-    const timeout = setTimeout(redirectHome, 11000); // Redirect after 3 seconds (adjust as needed)
+    const timeout = setTimeout(redirectHome, 10000); // Redirect after 3 seconds (adjust as needed)
 
     // Clean up the timer when component unmounts
     return () => clearTimeout(timeout);
